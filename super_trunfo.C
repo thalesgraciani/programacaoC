@@ -10,9 +10,11 @@ int main() {
     float area;
     float pib;
     int pontos_turisticos;
+    float densidade;
+    float pib_per_capita;
 
     //coletando dados carta 1
-    printf("Bem vindo ao cadastramento de cartas do supertrunfo de estados.\nEscolha uma letra para representar o Estado: \n");
+    printf("***Bem vindo ao cadastramento de cartas do supertrunfo de estados.\nEscolha uma letra para representar o Estado: ***\n");
     scanf(" %c", &estado);
 
     printf("Digite o código da carta, exemplo: A01: \n");
@@ -33,6 +35,9 @@ int main() {
     printf("Quantos pontos turísticos tem a cidade?: \n");
     scanf("%d", &pontos_turisticos);
 
+    densidade = (float) (populacao / area);
+     pib_per_capita = (float) (pib / populacao);
+
     
     char estado2;
     char codigo2[5];
@@ -41,6 +46,8 @@ int main() {
     float area2;
     float pib2;
     int pontos_turisticos2;
+    float densidade2;
+    float pib_per_capita2;
 
      //coletando dados carta 2
      printf("Bem vindo ao cadastramento de cartas do supertrunfo de estados.\nEscolha uma letra para representar o Estado: \n");
@@ -65,6 +72,9 @@ int main() {
      scanf("%d", &pontos_turisticos2);
      printf("\n");
 
+     densidade2 = (float)(populacao2 / area2);
+     pib_per_capita2 = (float)(pib2 / populacao2);
+    
 
     //Mostrando os dados coletados carta 1
 
@@ -76,6 +86,8 @@ int main() {
     printf("Área: %2f km²\n", area);
     printf("PIB: %2f bilhões de reais \n", pib);
     printf("Número de Pontos Turisticos: %i\n", pontos_turisticos);
+    printf("Densidade populacional: %2.f por hab/m²\n" , densidade);
+    printf("Pib per capita: r$%2.f\n", pib_per_capita);
     printf("\n");
     
      //Mostrando os dados coletados carta 2
@@ -88,6 +100,8 @@ int main() {
      printf("Área: %2f km²\n", area2);
      printf("PIB: %2f bilhões de reais \n", pib2);
      printf("Número de Pontos Turisticos: %i\n", pontos_turisticos2);
+     printf("Densidade populacional: %2.f hab/m²\n", densidade2);
+     printf("Pib per capita: R$%2.f\n", pib_per_capita2);
 
 
 
