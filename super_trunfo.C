@@ -104,6 +104,24 @@ int main() {
      printf("Pib per capita: R$%2.f\n", pib_per_capita2);
 
 
+    
+
+     //comparando atributos PIB PER CAPTA
+
+     printf("Comparando atributo Pib per capta... \n");   
+     printf("Pib per capta carta 1 (%s): %2.f\n", cidade, pib_per_capita);
+     printf("Pib per capta carta 2 (%s): %2.f\n", cidade2, pib_per_capita2);
+
+     if (pib_per_capita>pib_per_capita2)
+     {
+        printf("Carta 1 (%s) venceu!", cidade);
+     } else 
+     {
+        printf("Carta 2 (%s) venceu!", cidade2);
+     }
+     
+
+
 
 
 
